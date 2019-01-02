@@ -14,4 +14,3 @@ where ``<version>`` is a version number that hasn't been used yet (e.g. ``1.6``)
 used to identify the image. You can then push the image to the Docker Hub using:
 
     docker push astrofrog/hyperion-ci:<version>
-

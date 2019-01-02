@@ -12,9 +12,11 @@ RUN apt-get update
 RUN apt-get install -y libmpich-dev \
                        libhdf5-serial-dev \
                        python-dev \
-                       python-pip \
+                       python-setuptools \
                        git \
                        make
+
+RUN easy_install pip
 
 RUN mkdir -p /root/.config/matplotlib
 RUN echo "backend: Agg" > /root/.config/matplotlib/matplotlibrc
